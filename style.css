@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #444444; /* Dark gray for the text as seen in the mockup */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #5c7cfa; /* The blue color of the header */
+    padding: 25px 0;
+    width: 100%;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 50px; /* Space between links */
+}
+
+.nav-links li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Main Hero Section */
+.hero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif; /* A classic serif font matching the image */
+    font-size: 130px;
+    line-height: 1.15;
+    color: #434343;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+/* Secondary Pages Specific Styles */
+.page-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.content-wrapper {
+    text-align: center;
+    max-width: 800px;
+}
+
+.content-wrapper h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #434343;
+    margin-bottom: 20px;
+}
+
+.content-wrapper p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}

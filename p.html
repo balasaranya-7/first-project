@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Creative Developer</title>
+    <meta name="description"
+        content="Portfolio of a creative web developer showcasing projects, services, and contact information.">
+    <link rel="stylesheet" href="p.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="cursor-blob"></div>
+
+    <nav class="navbar">
+        <div class="logo">Portfo<span>lio.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+            <i class="fas fa-moon"></i>
+        </div>
+        <div class="hamburger" aria-label="Menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="subtitle">Hello, I'm</h2>
+                <h1 class="title">Creative Developer</h1>
+                <p class="description">I craft beautiful, interactive, and high-performance web experiences. Turning
+                    complex problems into simple, elegant solutions.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn primary-btn">Let's Talk</a>
+                    <a href="#services" class="btn secondary-btn">View Services</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card main-card">
+                    <div class="code-snippet">
+                        <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+    <span class="property">name</span>: <span class="string">"Your Name"</span>,
+    <span class="property">skills</span>: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JS"</span>],
+    <span class="property">passion</span>: <span class="string">"Building Ideas"</span>
+};</code></pre>
+                    </div>
+                </div>
+                <div class="floating-shape shape1"></div>
+                <div class="floating-shape shape2"></div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="section-header">
+                <h2>My <span>Services</span></h2>
+                <p>What I bring to the table</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass">
+                    <div class="icon-wrapper"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and highly interactive websites from scratch using modern web technologies.
+                    </p>
+                </div>
+                <div class="service-card glass">
+                    <div class="icon-wrapper"><i class="fas fa-paint-brush"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive and stunning user interfaces with a focus on seamless user experiences.</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="icon-wrapper"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p>Ensuring your website looks perfect and functions flawlessly on all devices and screen sizes.</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="icon-wrapper"><i class="fas fa-rocket"></i></div>
+                    <h3>SEO Optimization</h3>
+                    <p>Optimizing web architecture and content to boost search engine rankings and visibility.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2>Get In <span>Touch</span></h2>
+                <p>Let's build something amazing together.</p>
+            </div>
+            <div class="contact-container glass">
+                <form class="contact-form" id="contactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@yourdomain.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 234 567 890</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Github"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="p.js"></script>
+</body>
+
+</html>

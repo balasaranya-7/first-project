@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVSTART</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="showHome()">
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="DEVSTART Logo" onerror="this.style.display='none';">
+            <span>DEVSTART</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showHome()">HOME</a></li>
+                <li><a href="#" onclick="showAbout()">ABOUT</a></li>
+                <li><a href="#" onclick="showCourses()">COURSES</a></li>
+                <li><a href="#" onclick="showTemplates()">TEMPLATES</a></li>
+                <li><a href="#" onclick="showFeedback()">FEEDBACK</a></li>
+                <li><a href="#" onclick="showContact()">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button class="login-btn" onclick="openLogin()">Login</button>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="hello" id="homeSection">
+        <div class="hello-content">
+            <h1>Hello,<br>Welcome to DEVSTART</h1>
+            <p>A modern platform created to help beginners start their journey in developing stunning websites and
+                powerful web applications.</p>
+            <button class="login-btn" style="padding: 18px 36px; font-size: 18px; border-radius: 30px;"
+                onclick="showCourses()"> Explore Now</button>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="aboutSection">
+        <div class="about-content">
+            <h1>About DEVSTART</h1>
+            <h2>Our Mission</h2>
+            <p>At DEVSTART, our mission is to make web development learning accessible, interactive, and fun for
+                everyone. We believe that anyone can build websites with the right guidance and practical exercises,
+                regardless of prior experience.</p>
+
+            <h2>What You Will Learn</h2>
+            <p>Our platform focuses on the core web technologies: <strong>HTML, CSS, JavaScript</strong>, and modern
+                <strong>Frameworks</strong> to help you build interactive applications.
+            </p>
+
+            <h2>Hands-On Learning</h2>
+            <p>DEVSTART emphasizes learning by doing. You won’t just read theory — you will practice building real web
+                pages, experiment with styles, and write interactive scripts. Mini-projects help reinforce your
+                knowledge and give you tangible results.</p>
+
+            <h2>Step-by-Step Guidance</h2>
+            <p>Our lessons are structured to guide you from the basics to more advanced topics. You can learn at your
+                own pace, revisiting lessons as needed, and progressively tackle more complex projects.</p>
+
+            <h2>Who Can Benefit</h2>
+            <p>Whether you are a student, hobbyist, or aspiring professional, DEVSTART is designed for anyone who wants
+                to start learning web development.</p>
+        </div>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section class="courses-section" id="coursesSection">
+        <h1>Explore Our Courses</h1>
+        <div class="course-buttons">
+            <button onclick="showHTML()">HTML</button>
+            <button onclick="showCSS()">CSS</button>
+            <button onclick="showJS()">JavaScript</button>
+            <button onclick="showFrameworks()">Frameworks</button>
+        </div>
+
+        <!-- HTML Content -->
+        <div class="course-content" id="htmlContent">
+            <h2>Introduction to HTML</h2>
+            <p>HTML stands for <b>HyperText Markup Language</b>. It forms the backbone of every website, defining its
+                basic structure and organization. Every text, image, video, and link on a webpage is placed there using
+                HTML elements.</p>
+            <p>It was created by Tim Berners-Lee in 1991 and has evolved significantly since then. The latest version,
+                HTML5, introduced semantic elements to make web pages more meaningful and accessible to both browsers
+                and search engines.</p>
+            <h3>Common HTML Tags</h3>
+            <p><b>&lt;html&gt;</b> - Root element of the webpage</p>
+            <p><b>&lt;head&gt;</b> - Contains meta information like title, charset, and linked CSS files</p>
+            <p><b>&lt;title&gt;</b> – Sets the page title shown in the browser tab</p>
+            <p><b>&lt;body&gt;</b> – Holds the visible content of the webpage</p>
+            <p><b>&lt;h1&gt; to &lt;h6&gt;</b> – Heading tags, with h1 being the most important and h6 the least
+                important</p>
+            <p><b>&lt;p&gt;</b> – Used to write a block of text or paragraph</p>
+            <p><b>&lt;a&gt;</b> – Anchor tag, used to insert hyperlinks to other pages or sections</p>
+            <p><b>&lt;img&gt;</b> – Used to insert an Image onto the page</p>
+            <p><b>&lt;div&gt; &amp; &lt;span&gt;</b> – Generic container tags used heavily for styling and layout
+                structuring</p>
+            <h3>Example</h3>
+            <pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to DEVSTART&lt;/h1&gt;
+    &lt;p&gt;Learn Web Development easily&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+        </div>
+
+        <!-- CSS Content -->
+        <div class="course-content" id="cssContent">
+            <h2>Introduction to CSS</h2>
+            <p>CSS stands for <b>Cascading Style Sheets</b>. It acts as the "paint and decoration" for your HTML walls.
+                CSS controls the layout, colors, fonts, spacing, and the overall visual presentation of a website.</p>
+            <p>Without CSS, websites would just be plain black and white text on a screen. Adding CSS allows you to
+                create beautiful, engaging, and professional digital experiences that captivate users.</p>
+            <h3>Why CSS is Important</h3>
+            <p>• <b>Visual Appeal:</b> Instantly makes websites look attractive and modern.</p>
+            <p>• <b>Responsive Design:</b> Ensures your site works on screens of all sizes, from mobile phones to
+                massive monitors using media queries.</p>
+            <p>• <b>Separation of Concerns:</b> Keeps structural code (HTML) separate from styling code (CSS), making it
+                easier to maintain.</p>
+            <p>• <b>Animations & Effects:</b> Can add interactive hover effects and smooth animations.</p>
+            <h3>Basic CSS Syntax</h3>
+            <pre>
+selector {
+  property: value;
+}
+</pre>
+            <h3>Common CSS Properties</h3>
+            <p><b>color</b> – Changes the color of the text</p>
+            <p><b>background-color</b> – Sets the background color of an element</p>
+            <p><b>font-size &amp; font-family</b> – Modifies the size and typeface of the text</p>
+            <p><b>margin</b> – The invisible space outside an element's border, pushing other elements away</p>
+            <p><b>padding</b> – The invisible space inside an element, pushing its content inward from the border</p>
+            <p><b>display &amp; position</b> – Controls how elements are laid out on the page, unlocking flexbox or grid
+                layouts</p>
+        </div>
+
+        <!-- JS Content -->
+        <div class="course-content" id="jsContent">
+            <h2>Introduction to JavaScript</h2>
+            <p>JavaScript is a <b>powerful programming language</b> that breathes life into web pages. While HTML
+                defines the structure and CSS defines the appearance, JavaScript defines the behavior. It allows
+                developers to create complex, highly interactive, and dynamic user interfaces.</p>
+            <p>Today, JavaScript is everywhere. It runs in the browser, on the server (using Node.js), and even inside
+                mobile applications.</p>
+            <h3>Why JavaScript is Important</h3>
+            <p>• <b>Interactivity:</b> Adds features like image sliders, pop-ups, and interactive maps.</p>
+            <p>• <b>Real-time Updates:</b> Can fetch new data and update webpage content instantly without requiring a
+                full page refresh (AJAX/Fetch).</p>
+            <p>• <b>User Feedback:</b> Handles user interactions such as button clicks, typing in forms, and mouse
+                tracking.</p>
+            <p>• <b>Validation:</b> Verifies user inputs quickly before saving to a database, catching errors instantly.
+            </p>
+            <h3>Basic JavaScript Example</h3>
+            <pre>
+&lt;script&gt;
+function greet() {
+  const name = prompt("What is your name?");
+  alert("Welcome to DEVSTART, " + name + "!");
+}
+&lt;/script&gt;
+&lt;button onclick="greet()"&gt;Click Me&lt;/button&gt;
+</pre>
+            <h3>Common JavaScript Concepts</h3>
+            <p><b>Variables</b> – Containers used to store temporary data values (using let, const).</p>
+            <p><b>Functions</b> – Reusable blocks of code that perform specific tasks when called.</p>
+            <p><b>Events &amp; Listeners</b> – Code that waits and triggers when a user performs actions like clicking
+                or scrolling.</p>
+            <p><b>DOM Manipulation</b> – Allows JavaScript to dynamically add, change, or remove HTML elements on the
+                current page.</p>
+        </div>
+
+        <!-- Frameworks Content -->
+        <div class="course-content" id="frameworksContent">
+            <h2>Introduction to Frameworks</h2>
+            <p>Once you master HTML, CSS, and JavaScript, you will realize that building large web applications from
+                scratch can be repetitive and time-consuming. This is where <b>Frameworks</b> and <b>Libraries</b> come
+                in.</p>
+            <p>Frameworks provide pre-written code, standardized structures, and powerful tools to help you build
+                applications faster, more securely, and with cleaner code.</p>
+            <h3>Popular Frontend Frameworks</h3>
+            <p>• <b>React.js:</b> Developed by Facebook, it uses component-based architecture for building user
+                interfaces swiftly.</p>
+            <p>• <b>Vue.js:</b> Known for its simplicity and gentle learning curve, making it incredibly popular among
+                newer developers.</p>
+            <p>• <b>Angular:</b> A comprehensive framework maintained by Google, often used for massive enterprise-level
+                applications.</p>
+            <h3>Why Use Frameworks?</h3>
+            <p>• <b>Speed up development:</b> Stop reinventing the wheel and use proven components.</p>
+            <p>• <b>Maintainability:</b> Structured and predictable codebase is easier for teams to work on together.
+            </p>
+            <p>• <b>Ecosystem:</b> Huge libraries of plugins and community support to help solve complex problems.</p>
+        </div>
+    </section>
+
+    <!-- TEMPLATES SECTION -->
+    <section class="templates-section" id="templatesSection">
+        <div class="templates-container">
+            <h1>Website Templates</h1>
+            <p style="color: #cbd5e1; font-size: 18px; margin-bottom: 30px;">Get inspired by these stunning modern
+                designs to kickstart your next project.</p>
+            <div class="templates-images">
+                <img src="https://themewagon.com/wp-content/uploads/2024/09/Organic.webp" alt="Template 1">
+                <img src="https://blog.boxmode.com/wp-content/uploads/2020/09/designart.jpg" alt="Template 2">
+                <img src="https://designmodo.com/wp-content/uploads/2024/01/estate-1.jpg" alt="Template 3">
+                <img src="https://firmbee.com/wp-content/uploads/template_9_freebees_0-500x300.png" alt="Template 4">
+                <img src="https://uicookies.com/wp-content/uploads/2020/07/services-website-templates-1000x750.jpg"
+                    alt="Template 5">
+                <img src="https://px-web-images2.pixpa.com/lmKXxpGrUA_R0lZapq7N5J0Wa1lQD2TTXbC3HCuUQ1g/rs:fit:640:0/q:90/aHR0cHM6Ly9waXhwYWNvbS1pbWcucGl4cGEuY29tL2ltYWdlcy9kZXNpZ25zLzE2NzM4NTUzODktdGl0YW4tYS1waXhwYS10aGVtZS5qcGc="
+                    alt="Template 6">
+                <img src="https://hasthemes.com/blog/wp-content/uploads/2024/02/pixoto-photography-website-template.jpg"
+                    alt="Template 7">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_770,h_490/https://www.toocss.com/wp-content/uploads/2020/04/elfyer-toocss.jpg"
+                    alt="Template 8">
+                <img src="https://w3layouts.com/wp-content/uploads/2013/06/mobilestore-future.png" alt="Template 9">
+            </div>
+        </div>
+    </section>
+
+    <!-- FEEDBACK SECTION -->
+    <section class="feedback-section" id="feedbackSection">
+        <div class="feedback-container">
+            <h1>Feedback</h1>
+            <p>We value your feedback! Share your experience, ideas, or any issues you faced while using our website.
+                Your feedback will help us make learning more effective and user-friendly.</p>
+            <form class="feedback-form" onsubmit="event.preventDefault(); alert('Feedback submitted! Thank you.');">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter your email" required>
+                <textarea placeholder="Enter your feedback" rows="4" required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contactSection">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p>Have questions or suggestions? Feel free to reach out. We would love to hear from you and help you start
+                your journey in web development.</p>
+            <div class="contact-info">
+                <p>📧 <b>devstart@gmail.com</b></p>
+                <p>📞 <b>+91 8790192908</b></p>
+                <p>📍 <b>India</b></p>
+            </div>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- LOGIN SECTION -->
+    <section class="login-section" id="loginSection">
+        <div class="login-container">
+            <h1>Welcome Back</h1>
+            <form class="login-form" onsubmit="event.preventDefault(); alert('Logged in!'); showHome();">
+                <input type="email" placeholder="Enter your email" required>
+                <input type="password" placeholder="Enter your password" required>
+                <button type="submit">Login</button>
+                <p class="switch-link">
+                    Don't have an account?
+                    <a href="#" onclick="openRegister()">Register here</a>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- REGISTER SECTION -->
+    <section class="register-section" id="registerSection">
+        <div class="register-container">
+            <h1>Create Account</h1>
+            <form class="register-form" onsubmit="event.preventDefault(); alert('Account created!'); openLogin();">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit">Register</button>
+                <p class="switch-link">
+                    Already have an account?
+                    <a href="#" onclick="openLogin()">Login here</a>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const homeSection = document.getElementById("homeSection");
+        const aboutSection = document.getElementById("aboutSection");
+        const coursesSection = document.getElementById("coursesSection");
+        const templatesSection = document.getElementById("templatesSection");
+        const feedbackSection = document.getElementById("feedbackSection");
+        const contactSection = document.getElementById("contactSection");
+        const loginSection = document.getElementById("loginSection");
+        const registerSection = document.getElementById("registerSection");
+
+        const htmlContent = document.getElementById("htmlContent");
+        const cssContent = document.getElementById("cssContent");
+        const jsContent = document.getElementById("jsContent");
+        const frameworksContent = document.getElementById("frameworksContent");
+
+        function showHome() {
+            homeSection.style.display = "flex";
+            aboutSection.style.display = "none";
+            coursesSection.style.display = "none";
+            templatesSection.style.display = "none";
+            feedbackSection.style.display = "none";
+            contactSection.style.display = "none";
+            loginSection.style.display = "none";
+            registerSection.style.display = "none";
+            window.scrollTo(0, 0);
+        }
+
+        function showAbout() {
+            homeSection.style.display = "none";
+            aboutSection.style.display = "flex";
+            coursesSection.style.display = "none";
+            templatesSection.style.display = "none";
+            feedbackSection.style.display = "none";
+            contactSection.style.display = "none";
+            loginSection.style.display = "none";
+            registerSection.style.display = "none";
+            window.scrollTo(0, 0);
+        }
+
+        function showCourses() {
+            homeSection.style.display = "none";
+            aboutSection.style.display = "none";
+            coursesSection.style.display = "flex";
+            templatesSection.style.display = "none";
+            feedbackSection.style.display = "none";
+            contactSection.style.display = "none";
+            loginSection.style.display = "none";
+            registerSection.style.display = "none";
+            window.scrollTo(0, 0);
+            showHTML();
+        }
+
+        function showTemplates() {
+            homeSection.style.display = "none";
+            aboutSection.style.display = "none";
+            coursesSection.style.display = "none";
+            templatesSection.style.display = "flex";
+            feedbackSection.style.display = "none";
+            contactSection.style.display = "none";
+            loginSection.style.display = "none";
+            registerSection.style.display = "none";
+            window.scrollTo(0, 0);
+        }
+
+        function showFeedback() {
+            homeSection.style.display = "none";
+            aboutSection.style.display = "none";
+            coursesSection.style.display = "none";
+            templatesSection.style.display = "none";
+            feedbackSection.style.display = "flex";
+            contactSection.style.display = "none";
+            loginSection.style.display = "none";
+            registerSection.style.display = "none";
+            window.scrollTo(0, 0);
+        }
+
+        function showContact() {
+            homeSection.style.display = "none";
+            aboutSection.style.display = "none";
+            coursesSection.style.display = "none";
+            templatesSection.style.display = "none";
+            feedbackSection.style.display = "none";
+            contactSection.style.display = "flex";
+            loginSection.style.display = "none";
+            registerSection.style.display = "none";
+            window.scrollTo(0, 0);
+        }
+
+        function openLogin() {
+            homeSection.style.display = "none";
+            aboutSection.style.display = "none";
+            coursesSection.style.display = "none";
+            templatesSection.style.display = "none";
+            feedbackSection.style.display = "none";
+            contactSection.style.display = "none";
+            loginSection.style.display = "flex";
+            registerSection.style.display = "none";
+            window.scrollTo(0, 0);
+        }
+
+        function openRegister() {
+            homeSection.style.display = "none";
+            aboutSection.style.display = "none";
+            coursesSection.style.display = "none";
+            templatesSection.style.display = "none";
+            feedbackSection.style.display = "none";
+            contactSection.style.display = "none";
+            loginSection.style.display = "none";
+            registerSection.style.display = "flex";
+            window.scrollTo(0, 0);
+        }
+
+        function showHTML() {
+            htmlContent.style.display = "block";
+            cssContent.style.display = "none";
+            jsContent.style.display = "none";
+            frameworksContent.style.display = "none";
+        }
+
+        function showCSS() {
+            htmlContent.style.display = "none";
+            cssContent.style.display = "block";
+            jsContent.style.display = "none";
+            frameworksContent.style.display = "none";
+        }
+
+        function showJS() {
+            htmlContent.style.display = "none";
+            cssContent.style.display = "none";
+            jsContent.style.display = "block";
+            frameworksContent.style.display = "none";
+        }
+
+        function showFrameworks() {
+            htmlContent.style.display = "none";
+            cssContent.style.display = "none";
+            jsContent.style.display = "none";
+            frameworksContent.style.display = "block";
+        }
+
+        window.onload = showHome;
+    </script>
+</body>
+
+</html>
